@@ -33,10 +33,7 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/assets"
             ],
             "styles": [
               "src/styles.scss"
@@ -110,5 +107,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "e0f7149d-8bea-43a1-aadc-a049bf3d148a"
   }
 }
