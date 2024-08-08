@@ -32,7 +32,7 @@ export class WeatherHomeComponent implements  OnInit,  OnDestroy {
     .subscribe({
       next:(response)=>{
         console.log(response)
-        return response;
+        this.weatherDatas = response;
       },
       error:(error)=>{
         console.log(error)

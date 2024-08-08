@@ -1,6 +1,6 @@
-<div class="container">
+<div class="container" *ngIf="weatherDatasInput">
     <div class="upper-data">
-      <img src="../../../../../assets/sun.jpg">
-      <img src="../../../../../assets/cold1.jpg">
+      <img src="../../../../../assets/sun.jpg"  *ngIf="weatherDatasInput.main.temp > 15">
+      <img src="../../../../../assets/cold1.jpg"  *ngIf="weatherDatasInput.main.temp <= 15">
     </div>
 </div>
